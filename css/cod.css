@@ -1,33 +1,42 @@
 /* Mi primer hoja de estilos*/
 
-body {
+/* body {
     background-color: aqua;
-}
+} */
 
-#estiloheader {
+header {
     background-color: crimson;
+    padding: 15px;
 }
 
-ul{
+nav{
     background-color: blue;
+    
+}
+
+il{
+    background-color: rgb(19, 235, 235);
+    /*display:inline;*/
 }
 
 section{
     background-color: blueviolet;
+    padding: 15px;
 }
 
 aside{
     background-color:chartreuse;
+    float:left;
+    height: 125px;
+    padding: 15px;
 }
 
 footer{
     background-color: hotpink;
+    padding: 15px;
 }
 
 h2 {
     background-color: burlywood;
-}
-
-h3  {
-    background-color: cadetblue;
+    padding: 15px;
 }
