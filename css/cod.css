@@ -3,3 +3,31 @@
 body {
     background-color: aqua;
 }
+
+#estiloheader {
+    background-color: crimson;
+}
+
+ul{
+    background-color: blue;
+}
+
+section{
+    background-color: blueviolet;
+}
+
+aside{
+    background-color:chartreuse;
+}
+
+footer{
+    background-color: hotpink;
+}
+
+h2 {
+    background-color: burlywood;
+}
+
+h3  {
+    background-color: cadetblue;
+}
