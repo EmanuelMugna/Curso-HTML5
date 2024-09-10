@@ -1,9 +1,16 @@
+/* Estilos del body */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en los anchos */
+}
 
 /* Estilos del header */
 header {
     background-color: crimson;
     padding: 15px;
     margin: 0; /* Elimina el margen para que esté pegado a los otros elementos */
+    color: white;
 }
 
 /* Estilos del nav */
@@ -13,7 +20,6 @@ nav {
     margin: 0; /* Elimina el margen para que esté pegado */
 }
 
-/* Estilos de los ítems en el nav */
 nav ul {
     list-style: none;
     padding: 0;
@@ -26,45 +32,41 @@ nav ul li {
     color: white;
 }
 
-/* Estilos del contenedor principal */
+/* Contenedor principal para aside y section */
 .container {
-    display: flex; /* Flexbox para hacer que aside y section estén alineados */
+    display: flex; /* Flexbox para alinear aside y section horizontalmente */
     margin: 0;
     padding: 0;
-    height: auto; /* Ajusta la altura para que ambos se alineen */
+    width: 100%; /* Ocupa el 100% del ancho de la página */
 }
 
 /* Estilos del aside */
 aside {
     background-color: chartreuse;
     padding: 15px;
-    width: 20%; /* Toma el 20% del ancho total */
+    width: 20%; /* Asignamos el 20% del ancho para el aside */
+    box-sizing: border-box; /* Para incluir el padding en el ancho */
 }
 
-/* Estilos de la sección */
+/* Estilos de la section */
 section {
     background-color: blueviolet;
     padding: 15px;
-    width: 80%; /* Toma el 80% del ancho total */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
-}
-
-/* Asegura que aside y section tengan la misma altura */
-.container > aside, .container > section {
-    align-items: stretch; /* Hace que ambos tengan la misma altura */
+    width: 80%; /* Asignamos el 80% del ancho para la section */
+    box-sizing: border-box; /* Para incluir el padding en el ancho */
 }
 
 /* Estilos del footer */
 footer {
     background-color: hotpink;
     padding: 15px;
-    margin: 0; /* Elimina el margen para estar pegado al final */
-    clear: both;
+    margin: 0;
+    color: white;
 }
 
 /* Estilos de los títulos (h2) */
 h2 {
     background-color: burlywood;
     padding: 15px;
-    margin: 0; /* Elimina márgenes para pegarlos a los elementos cercanos */
+    margin: 0;
 }
