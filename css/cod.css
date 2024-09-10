@@ -1,42 +1,77 @@
-/* Mi primer hoja de estilos*/
 
-/* body {
-    background-color: aqua;
-} */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header {
-    background-color: crimson;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+aside {
+    width: 20%;
+    background-color: #f4f4f4;
     padding: 15px;
 }
 
-nav{
-    background-color: blue;
-    
-}
-
-il{
-    background-color: rgb(19, 235, 235);
-    /*display:inline;*/
-}
-
-section{
-    background-color: blueviolet;
+section {
+    width: 75%;
     padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
-aside{
-    background-color:chartreuse;
-    float:left;
-    height: 125px;
-    padding: 15px;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-footer{
-    background-color: hotpink;
-    padding: 15px;
-}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 
-h2 {
-    background-color: burlywood;
-    padding: 15px;
+    aside, section {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
