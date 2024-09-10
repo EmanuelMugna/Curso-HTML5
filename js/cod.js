@@ -2,10 +2,12 @@
 
 function inicio(){
 
-//document.querySelector(".barra").onclick=ejecuta;
- for(var i=0;i<3;i++){
+ var a = document.querySelectorAll(".barra");
 
-         var a = document.querySelectorAll(".barra")[i ].onclick=ejecuta;
+//document.querySelector(".barra").onclick=ejecuta;
+ for(var i=0;i<a.length;i++){
+
+         a[i].onclick=ejecuta;
 // //    document.getElementById("importante").onclick=ejecuta               //devuelve un unico elemento
 // //    document.getElementsByTagName("p")[i ].onclick=ejecuta;
 // //    var aux=document.getElements("menu1") [i ].onclick=ejecuta;
