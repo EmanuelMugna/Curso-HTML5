@@ -1,77 +1,70 @@
 
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilos del header */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    background-color: crimson;
+    padding: 15px;
+    margin: 0; /* Elimina el margen para que esté pegado a los otros elementos */
 }
 
+/* Estilos del nav */
+nav {
+    background-color: blue;
+    padding: 10px;
+    margin: 0; /* Elimina el margen para que esté pegado */
+}
+
+/* Estilos de los ítems en el nav */
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    background-color: #333;
-    text-align: center;
+    margin: 0;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin-right: 10px;
     color: white;
 }
 
-nav ul li:hover {
-    text-decoration: underline;
-}
-
+/* Estilos del contenedor principal */
 .container {
-    display: flex;
-    margin: 20px;
-    justify-content: space-between;
+    display: flex; /* Flexbox para hacer que aside y section estén alineados */
+    margin: 0;
+    padding: 0;
+    height: auto; /* Ajusta la altura para que ambos se alineen */
 }
 
+/* Estilos del aside */
 aside {
-    width: 20%;
-    background-color: #f4f4f4;
+    background-color: chartreuse;
     padding: 15px;
+    width: 20%; /* Toma el 20% del ancho total */
 }
 
+/* Estilos de la sección */
 section {
-    width: 75%;
+    background-color: blueviolet;
     padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    width: 80%; /* Toma el 80% del ancho total */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
+/* Asegura que aside y section tengan la misma altura */
+.container > aside, .container > section {
+    align-items: stretch; /* Hace que ambos tengan la misma altura */
+}
+
+/* Estilos del footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: hotpink;
+    padding: 15px;
+    margin: 0; /* Elimina el margen para estar pegado al final */
+    clear: both;
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    aside, section {
-        width: 100%;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+/* Estilos de los títulos (h2) */
+h2 {
+    background-color: burlywood;
+    padding: 15px;
+    margin: 0; /* Elimina márgenes para pegarlos a los elementos cercanos */
 }
