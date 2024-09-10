@@ -4,8 +4,9 @@ function inicio(){
 
 for(var i=0;i<3;i++){
 
+      document.getElementById("importante").onclick=ejecuta               //devuelve un unico elemento
 //    document.getElementsByTagName("p")[i ].onclick=ejecuta;
-      var aux=document.getElementsByClassName("menu1") [i ].onclick=ejecuta;
+      var aux=document.getElements("menu1") [i ].onclick=ejecuta;
 } 
 }
 
