@@ -2,16 +2,10 @@
 
 function inicio(){
 
- var a = document.querySelectorAll(".barra");
+ var foto = document.getElementsByTagName("img")[ 0];
+ foto.addEventListener("click", ejecuta,false)
 
-//document.querySelector(".barra").onclick=ejecuta;
- for(var i=0;i<a.length;i++){
 
-         a[i].onclick=ejecuta;
-// //    document.getElementById("importante").onclick=ejecuta               //devuelve un unico elemento
-// //    document.getElementsByTagName("p")[i ].onclick=ejecuta;
-// //    var aux=document.getElements("menu1") [i ].onclick=ejecuta;
- } 
 }
 
 function ejecuta(){
