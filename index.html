@@ -14,7 +14,7 @@
         <h1>Este es el H1</h1>
         <p>Este es un párrafo en el Header</p>
     </header>
-<div>
+<div style="display: flex; justify-content: space-between; align-items: center;">
     <nav>
         <ul>
             <li class="barra">Menu 1</li>
@@ -24,6 +24,12 @@
             <li>Menu 5</li>
         </ul>
     </nav>
+
+    <form name="miformulario" id="miformulario" method="get">
+        <input type="text">
+        <input type="submit">
+    </form>
+
 </div>
 
     <!-- Contenedor que envuelve aside y section -->
@@ -33,9 +39,11 @@
         </aside>
 
         <section>
+            
             <h2>Título de section</h2>
+            
             <div style= "display: flex">
-                <video id="video" controls>
+                <video id="video" controls autoplay loop>
                     <source src="videos/video1.mp4">
                     Tu navegador no soporta el video.
                 </video>
