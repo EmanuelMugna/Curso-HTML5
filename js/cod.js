@@ -9,23 +9,20 @@ var foto;
 function inicio(){
 
  foto = document.getElementsByTagName("img")[ 0];
- foto.addEventListener("mouseover", crecer,false)
- foto.addEventListener("mouseout", decrecer,false)
  foto.addEventListener("click",ejecuta,false)
+ 
+ parrafo = document.getElementById("parrafo");
+ parrafo.addEventListener("click",ejecuta2,true);
+ // parrafo.addEventListener("click",ejecuta2,false);  // doy prioridad a segundo cartel (debo siempre leer secuencialmente)
 }
 
 function ejecuta(){
-    alert('Mensaje on Click');
+    alert('Mensaje on Click de imagen');
 }
 
-function crecer(){
-    foto.width=225;
-    foto.heigth=225;
+function ejecuta2(){
+    alert('Mensaje on Click de parrafo');
 }
 
-function decrecer(){
-    foto.width=200;
-    foto.heigth=200;
-}
 
 window.onload=inicio;
