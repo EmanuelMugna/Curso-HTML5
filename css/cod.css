@@ -83,3 +83,15 @@ h2 {
     flex: 1; /* Ocupa el espacio restante en el contenedor */
     text-align: justify;
 }
+
+#imagen{
+    float: left;
+    margin-right: 15px;
+}
+
+#barra{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+}
