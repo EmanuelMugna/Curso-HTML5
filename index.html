@@ -26,7 +26,7 @@
     </nav>
 
     <form name="miformulario" id="miformulario" method="get" autocomplete="off">
-        <input type="text" name="Texto" id="Textoformulario">
+        Email: &nbsp; <input type="email" name="Texto" id="Textoformulario">
         <input type="submit" value="Enviar">
     </form>
 
@@ -56,6 +56,11 @@
 
     <footer>
         <p>Este es el pie de página</p>
+        <form name="contacto" id="contacto", method="get">
+            Nombre y apellido &nbsp; <input type="text" name="nombre" id="name"><br><br>
+            Edad &nbsp;<input type="number" name="edad" id="edad" min="0" max="120" step="5" placeholder="multiplos de 5"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
     </footer>
 </body>
 
