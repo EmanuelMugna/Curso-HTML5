@@ -100,3 +100,14 @@ h2 {
     width: 150px;
     height: 20px;
 }
+
+table{
+    text-align: center;
+    background-color: cadetblue;
+    margin: auto;
+    border: 2px crimson solid;
+}
+
+td{
+    padding: 15px;
+}

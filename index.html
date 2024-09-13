@@ -56,16 +56,26 @@
 
     <footer>
         <p>Este es el pie de página</p>
-        <form name="contacto" id="contacto", method="get">
-            Nombre y apellido &nbsp; <input type="text" name="nombre" id="name"><br><br>
-            Edad &nbsp;<input type="number" name="edad" id="edad" min="0" max="120" step="5" placeholder="multiplos de 5"><br><br>
-            <datalist id="provincias"> <!-- puedo agregar un label="text" para dar una descripcion de la opcion -->
-            <option value="Salta">
-            <option value="Corrientes">
-            <option value="Entre rios">
-            </datalist>
-            Provincia &nbsp; <input type="text" name="provincia" id="provincia" list="provincias">
-            <input type="submit" value="Enviar">
+        <form name="registro usuario" method="get">
+            <table>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="nombre" id="nombre"></td>
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td><input type="text" name="apellido" id="apellido"></td>
+                </tr>
+                <tr>
+                    <td>Edad</td>
+                    <td><input type="number" name="edad" id="edad" min="0" max="120"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="enviar" value="Registrar">
+                    </td>
+                </tr>
+            </table>
         </form>
     </footer>
 </body>
