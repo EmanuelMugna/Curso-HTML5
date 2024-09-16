@@ -56,19 +56,24 @@
 
     <footer>
         <p>Este es el pie de página</p>
-        <form name="registro usuario" method="get">
+        <form name="registro_usuario" method="get">
             <table>
                 <tr>
-                    <td>Nombre</td>
-                    <td><input type="text" name="nombre" id="nombre"></td>
+                    <td>Usuario</td>
+                    <td><input pattern="[A-Za-z]{3}" name="usuario" id="usuario" maxlength="10" required></td>
                 </tr>
                 <tr>
-                    <td>Apellido</td>
-                    <td><input type="text" name="apellido" id="apellido"></td>
+                    <td>Email</td>
+                    <td><input type="email" name="email" id="email"></td>
                 </tr>
                 <tr>
                     <td>Edad</td>
-                    <td><input type="number" name="edad" id="edad" min="0" max="120"></td>
+                    <td><input type="range" name="edad" id="edad" min="0" max="120" value="30" step="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <output id="rango">0 a 30</output>
+                    </td>
                 </tr>
                 <tr>
                     <td>
