@@ -36,11 +36,20 @@ function comenzar(){
     
     function enviar(){
     
+        var cuadro_usuario=document.getElementById("usuario");
         var correcto=document.registro_usuario.checkValidity();
     
         if(correcto==true){
             document.registro_usuario.submit();
         }
+
+        else if (cuadro_usuario.validity.valueMissing==true){
+
+        // patternmismatch o typemismatch o toolong o range underflow 
+
+            alert("El usuario no puede estar vacio")
+        }
+
     }
     
     function validar_tiempo_real(e){
