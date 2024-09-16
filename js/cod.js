@@ -6,7 +6,10 @@ function comenzar(){
     edad.addEventListener("change",cambia_rango,false);
     
     document.registro_usuario.addEventListener("invalid", validar,true);
+    
     document.getElementById("enviar").addEventListener("click",enviar,false);
+    
+    document.registro_usuario.addEventListener("input", validar_tiempo_real,false);
     
     }
     
@@ -40,7 +43,20 @@ function comenzar(){
         }
     }
     
-    
+    function validar_tiempo_real(e){
+
+        var elemento=e.target;
+
+        if(elemento.validity.valid==true){
+
+            elemento.style.background="#FFFFFF";
+        }
+
+        else {
+            elemento.style.background="#FFDDDD";
+        }
+
+    }
     
     window.addEventListener("load",comenzar,false);
     
